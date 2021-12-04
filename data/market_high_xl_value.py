@@ -7,7 +7,7 @@ class LTP(object):
         in this class i'm taking "ltp rows value" from exal file, sheet name is Market Highlights (Value)
     '''
 
-    exl = op.load_workbook(r'//files/Book1.xlsx')
+    exl = op.load_workbook(r'/home/abdullah/Desktop/dhaka_stok/files/Book1.xlsx')
     sh1 = exl['Market Highlights (Value)']
     ltp_values = []
     for i in range(3, 385):
@@ -16,7 +16,7 @@ class LTP(object):
 
 
 class HIGH(object):
-    exl = op.load_workbook(r'//files/Book1.xlsx')
+    exl = op.load_workbook(r'/home/abdullah/Desktop/dhaka_stok/files/Book1.xlsx')
     sh1 = exl['Market Highlights (Value)']
     high_values = []
     for i in range(3, 385):
